@@ -4,6 +4,7 @@ import userPlaceHolder from "../../assets/images/header/user.png"
 import finder from "../../assets/images/header/search.png"
 import "./Header.scss"
 import { Link } from 'react-router-dom'
+import { RightSideBar } from './RightSideBar/RightSideBar'
 
 export const Header = () => {
     const [hasScrolled, setHasScrolled] = useState(false);
@@ -20,6 +21,11 @@ export const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+
+    const [isOpen, setIsOpen] = useState(false)
+
+
     return (
         <header className={hasScrolled ? 'scrolled' : ''}>
             <div className='headerLeftSide'>
@@ -34,9 +40,14 @@ export const Header = () => {
             </div>
 
             <div className='headerRightSide'>
-                <img src={cart} alt='cart' />
-                <img src={userPlaceHolder} alt='user' />
+                <div className='cart'>
+                    <img src={cart} alt='cart' />
+                    <span className='cartCount'>0</span>
+                </div>
+                <img src={userPlaceHolder} alt='user' onClick={() => setIsOpen(!isOpen)} />
             </div>
+
+            <RightSideBar isOpen={isOpen} setIsOpen={setIsOpen} />
         </header>
     )
 }
