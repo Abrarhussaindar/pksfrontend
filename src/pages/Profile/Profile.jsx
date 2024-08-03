@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const Profile = () => {
     return (
-        <div>Profile</div>
+        <MainLayout>
+            <h1>profile</h1>
+        </MainLayout>
     )
 }

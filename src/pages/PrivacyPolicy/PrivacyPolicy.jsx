@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const PrivacyPolicy = () => {
     return (
-        <div>PrivacyPolicy</div>
+        <MainLayout>
+            <h1>privacy</h1>
+        </MainLayout>
     )
 }

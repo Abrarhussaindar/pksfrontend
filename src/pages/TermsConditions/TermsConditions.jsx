@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const TermsConditions = () => {
     return (
-        <div>TermsConditions</div>
+        <MainLayout>
+            <h1>terms</h1>
+        </MainLayout>
     )
 }

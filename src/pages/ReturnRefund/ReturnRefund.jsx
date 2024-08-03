@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const ReturnRefund = () => {
     return (
-        <div>ReturnRefund</div>
+        <MainLayout>
+            <h1>return</h1>
+        </MainLayout>
     )
 }

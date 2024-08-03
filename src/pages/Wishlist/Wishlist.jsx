@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const Wishlist = () => {
     return (
-        <div>Wishlist</div>
+        <MainLayout>
+            <h1>wishlist</h1>
+        </MainLayout>
     )
 }

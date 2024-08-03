@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const Order = () => {
     return (
-        <div>Order</div>
+        <MainLayout>
+            <h1>order</h1>
+        </MainLayout>
     )
 }

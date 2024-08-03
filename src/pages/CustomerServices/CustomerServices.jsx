@@ -1,7 +1,10 @@
 import React from 'react'
+import { MainLayout } from '../../components/Layouts/MainLayout'
 
 export const CustomerServices = () => {
     return (
-        <div>CustomerServices</div>
+        <MainLayout>
+            <h1>customer</h1>
+        </MainLayout>
     )
 }
