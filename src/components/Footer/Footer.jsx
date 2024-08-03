@@ -22,11 +22,11 @@ export const Footer = () => {
                 <div className="center">
                     <h3>Important Links</h3>
                     <ul>
-                        <Link to="/aboutus">
+                        <Link to="/about-us">
                             <li>About Us</li>
 
                         </Link>
-                        <Link to="/contactus">
+                        <Link to="/contact-us">
 
                             <li>Contact Us</li>
                         </Link>
@@ -36,6 +36,7 @@ export const Footer = () => {
                         </Link>
                         <Link to="/login">
                             <li>Login</li>
+
 
                         </Link>
                         <Link to="/register">
@@ -47,7 +48,7 @@ export const Footer = () => {
                 <div className="center">
                     <h3>Other Links</h3>
                     <ul>
-                        <Link to="/privacypolicy">
+                        <Link to="/privacy-policy">
 
                             <li>Privacy Policy</li>
                         </Link>
@@ -55,15 +56,15 @@ export const Footer = () => {
                             <li>Disclaimer</li>
 
                         </Link>
-                        <Link to="/termsconditions">
+                        <Link to="/terms-conditions">
                             <li>Terms & Conditions</li>
 
                         </Link>
-                        <Link to="/sitemap">
+                        <Link to="/site-map">
                             <li>Index</li>
 
                         </Link>
-                        <Link to="returnrefund">
+                        <Link to="/return-refund">
 
                             <li>Return & Refund Policy</li>
                         </Link>

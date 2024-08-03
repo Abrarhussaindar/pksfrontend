@@ -22,14 +22,14 @@ export const RightSideBar = ({ isOpen, setIsOpen }) => {
                 <div className="linksContainer">
                     <ul>
 
-                        <Link to="/profile/1">
+                        <Link to="/profile">
                             <li><img className="icon userProfileIcon" src={userOutline} alt="" /><span>Profile</span></li>
                         </Link>
-                        <Link to="/orders/1">
+                        <Link to="/orders">
                             <li><img className="icon userOrdersIcon" src={orders} alt="" /><span>Orders</span></li>
                         </Link>
 
-                        <Link to="/wishlist/1">
+                        <Link to="/wishlist">
                             <li><img className="icon userWishlistIcon" src={love} alt="" /><span>Wishlist</span></li>
                         </Link>
 
