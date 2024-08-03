@@ -1,0 +1,320 @@
+@import "variables";
+@import "theme_color";
+@import "color_classes";
+@import "buttons";
+@import "base";
+@import "breakpoints";
+
+// navbar
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $base-padding * 1.5 $base-padding * 4;
+    background-color: $primary;
+    color: white;
+    position: sticky;
+    top: 0;
+    transition: all 0.2s ease-in;
+    .headerLeftSide,
+    .headerRightSide {
+        display: flex;
+        align-items: center;
+        gap: $base-gap * 2;
+
+        img {
+            cursor: pointer;
+            object-fit: contain;
+            width: 30px;
+        }
+    }
+
+    .headerLeftSide {
+        a {
+            display: flex;
+            align-items: center;
+            gap: $base-gap * 2;
+            color: white;
+            h3 {
+                font-weight: 500;
+                font-size: $base-font-size * 1.75;
+                span {
+                    color: $tertiary;
+                }
+            }
+        }
+    }
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: $base-padding;
+        border-radius: $base-border-radius * 5;
+        width: 50%;
+        img {
+            width: 25px;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding-left: $base-padding * 2;
+            width: 100%;
+        }
+    }
+}
+.scrolled {
+    box-shadow:
+        rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+// home
+main {
+    height: calc(100vh - 80px);
+}
+
+footer {
+    background-color: $primary;
+    color: white;
+    padding: 30px 30px 10px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    // @include media('>phone', '<=mobile'){
+    //     padding: 20px 20px 10px 20px;
+    // }
+    // @include media('>smphone', '<=phone'){
+    //     padding: 15px;
+    // }
+    // @include media('>largemb', '<=tablet'){
+    //     padding: 20px;
+    // }
+    // @include media('>phone', '<=largemb'){
+    //     padding: 20px;
+    // }
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        // @include media('>phone', '<=mobile'){
+        //     flex-direction: column;
+        //     text-align: center;
+        // }
+        // @include media('>smphone', '<=phone'){
+        //     flex-direction: column;
+        //     text-align: center;
+        // }
+        // @include media('>phone', '<=largemb'){
+        //     flex-direction: column;
+        //     text-align: center;
+        // }
+
+        // @include media('>largemb', '<=tablet'){
+        //     flex-wrap: wrap;
+        // }
+
+        .left {
+            // @include media('>largemb', '<=tablet'){
+            //     text-align: center;
+            //     margin-bottom: 30px;
+            // }
+            // @include media('>phone', '<=largemb'){
+            //     margin-bottom: 30px;
+            // }
+            h1 {
+                font-weight: 500;
+                font-size: 30px;
+                span {
+                    color: $tertiary;
+                }
+                // @include media('>largemb', '<=tablet'){
+                //     font-size: 22px;
+                // }
+            }
+            p {
+                width: 350px;
+                margin-top: 10px;
+
+                // @include media('>smphone', '<=phone'){
+                //     width: unset;
+                //     font-size: 16px;
+                // }
+                // @include media('>largemb', '<=tablet'){
+                //     width: unset;
+                //     font-size: 14px;
+                // }
+                // @include media('>phone', '<=largemb'){
+                //     width: unset;
+                // }
+            }
+        }
+
+        .center {
+            // @include media('>phone', '<=mobile'){
+            //     margin-top: 20px;
+            // }
+            // @include media('>smphone', '<=phone'){
+            //     margin-top: 20px;
+            // }
+            // @include media('>phone', '<=largemb'){
+            //     margin-bottom: 20px;
+            // }
+            h3 {
+                font-size: 18px;
+                font-weight: 600;
+                // @include media('>largemb', '<=tablet'){
+                //     font-size: 16px;
+                // }
+            }
+            ul {
+                list-style: none;
+                margin-top: 20px;
+                a {
+                    text-decoration: none;
+                }
+                li {
+                    margin-bottom: 10px;
+                    cursor: pointer;
+
+                    font-weight: 600;
+
+                    color: $tertiary;
+                    &:hover {
+                        color: white;
+                        transition: color 0.3s ease-in-out;
+                    }
+
+                    // @include media('>largemb', '<=tablet'){
+                    //     font-size: 14px;
+                    // }
+                }
+            }
+        }
+
+        .right {
+            .rightTop {
+                // @include media('>phone', '<=mobile'){
+                //     margin-top: 20px;
+                // }
+                // @include media('>smphone', '<=phone'){
+                //     margin-top: 20px;
+                // }
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    // @include media('>largemb', '<=tablet'){
+                    //     font-size: 16px;
+                    // }
+                }
+                .socialContainer {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    // @include media('>phone', '<=mobile'){
+                    //     justify-content: center;
+                    // }
+                    // @include media('>smphone', '<=phone'){
+                    //     justify-content: center;
+                    // }
+                    // @include media('>phone', '<=largemb'){
+                    //     justify-content: center;
+                    // }
+                    img {
+                        width: 30px;
+                        cursor: pointer;
+                        // @include media('>phone', '<=mobile'){
+                        //     width: 22px;
+                        // }
+                        // @include media('>smphone', '<=phone'){
+                        //     width: 22px;
+                        // }
+                        &:hover {
+                            transform: scale(1.1);
+                            transition: transform 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .rightBottom {
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    list-style: none;
+                    width: 252px;
+                    // @include media('>phone', '<=mobile'){
+                    //     width: unset;
+                    // }
+                    // @include media('>smphone', '<=phone'){
+                    //     width: unset;
+                    // }
+                    // @include media('>phone', '<=largemb'){
+                    //     width: unset;
+                    // }
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 600;
+                            // @include media('>phone', '<=mobile'){
+                            //     // display: flex;
+                            //     // align-items: center;
+                            //     // justify-content: center;
+                            // }
+                            // @include media('>smphone', '<=phone'){
+                            //     // display: flex;
+                            //     // align-items: center;
+                            //     // justify-content: center;
+                            // }
+                            // @include media('>phone', '<=largemb'){
+                            //     // display: flex;
+                            //     // align-items: center;
+                            //     // justify-content: center;
+                            // }
+                            span {
+                                margin-right: 8px;
+
+                                img {
+                                    width: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    hr {
+        border: 1px solid $secondary;
+        margin-top: 20px;
+    }
+    .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+
+        p {
+            span {
+                color: $tertiary;
+            }
+            // @include media('>smphone', '<=phone'){
+            //     font-size: 14px;
+            // }
+            // @include media('>largemb', '<=tablet'){
+            //     font-size: 14px;
+            // }
+        }
+    }
+}

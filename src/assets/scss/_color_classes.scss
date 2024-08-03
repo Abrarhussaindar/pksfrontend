@@ -1,0 +1,51 @@
+// color palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "error": $error,
+    "blue": #1919e6,
+    "red": #e61919,
+    "yellow": #e6e619,
+    "green": #19e635,
+    "pink": #ffc0cb,
+    "orange": #ffa600,
+    "purple": #9900ff,
+    "gray": #808080,
+    "black": black,
+    "white": white
+);
+
+@each $key, $val in $colors {
+    .text-#{$key} {
+        color: $val;
+    }
+    .hover-#{$key} {
+        &:hover {
+            color: $val;
+        }
+    }
+    .bg-#{$key} {
+        color: $val;
+    }
+
+    @if ($val != black and $val != white) {
+        // light variations
+        @for $i from 1 through 9 {
+            .hover-#{$key}-light-#{$i} {
+                &:hover {
+                    color: mix(white, $val, $i * 10%);
+                }
+            }
+        }
+
+        // dark variations
+        @for $i from 1 through 9 {
+            .hover-#{$key}-dark-#{$i} {
+                &:hover {
+                    color: mix(black, $val, $i * 10%);
+                }
+            }
+        }
+    }
+}

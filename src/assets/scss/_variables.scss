@@ -1,0 +1,23 @@
+// spacing
+$base-padding: 0.625rem;
+$base-margin: 0.625rem;
+$base-gap: 0.625rem;
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 10px;
+
+// box-shadow
+$base-box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+// font sizes
+$base-font-size: 1rem;
+$base-font-size-xsm: $base-font-size * 0.75rem;
+$base-font-size-sm: $base-font-size * 0.875rem;
+$base-font-size-lg: $base-font-size * 1.5rem;
+$base-font-size-xlg: $base-font-size * 2rem;
+$base-font-size-xxlg: $base-font-size * 3.5rem;
+
+
+// 
