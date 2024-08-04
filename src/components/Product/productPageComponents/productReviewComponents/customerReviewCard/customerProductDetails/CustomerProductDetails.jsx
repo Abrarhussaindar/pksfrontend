@@ -1,4 +1,4 @@
-import "./customerProductDetails.css"
+import "./customerProductDetails.scss"
 
 export default function CustomerProductDetails() {
     return (

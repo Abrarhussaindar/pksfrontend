@@ -1,6 +1,6 @@
-import "./featureReviews.css"
-import RatingStars from './ratingStars/RatingStars'
 
+import RatingStars from './ratingStars/RatingStars'
+import "./featureReviews.scss"
 export default function FeatureReviews() {
     return (
         <>

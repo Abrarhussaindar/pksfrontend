@@ -1,6 +1,6 @@
-import "./ProductDetails.css"
-import ProductRating from '../productRating/ProductRating'
 
+import ProductRating from '../productRating/ProductRating'
+import "./productDetails.scss"
 export default function ProductDetails() {
     return (
         <div className="productDetailsSection">

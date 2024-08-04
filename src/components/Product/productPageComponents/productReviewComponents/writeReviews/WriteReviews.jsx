@@ -1,4 +1,4 @@
-import "./writeReviews.css"
+import "./writeReviews.scss"
 
 export default function WriteReviews() {
     return (

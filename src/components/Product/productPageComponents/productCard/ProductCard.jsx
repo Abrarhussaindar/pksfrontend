@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "./productCard.css"
+import "./productCard.scss"
 import { useEffect, useState } from "react"
 
 export default function ProductCard({product, subcate}) {

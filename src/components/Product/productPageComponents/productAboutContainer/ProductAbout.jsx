@@ -1,4 +1,4 @@
-import "./productAbout.css"
+import "./productAbout.scss"
 
 export default function ProductAbout() {
     return (

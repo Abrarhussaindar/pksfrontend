@@ -1,5 +1,4 @@
-@import "../../../breakpoints.scss";
-
+// @import "../../../breakpoints.scss";
 .productAbout{
     margin-top: 15px;
 
@@ -9,19 +8,19 @@
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 10px;
-            @include media('>phone', '<=mobile'){
-                font-size: 16px;
+            // @include media('>phone', '<=mobile'){
+            //     font-size: 16px;
 
-            }
-            @include media('>smphone', '<=phone'){
+            // }
+            // @include media('>smphone', '<=phone'){
         
-            }
-            @include media('>mobile', '<=largemb'){
+            // }
+            // @include media('>mobile', '<=largemb'){
         
-            }
-            @include media('>largemb', '<=tablet'){
+            // }
+            // @include media('>largemb', '<=tablet'){
         
-            }
+            // }
         }
     }
     .description{
@@ -32,19 +31,19 @@
                 font-weight: 500;
                 margin-bottom: 5px;
                 color: rgb(106, 101, 101);
-                @include media('>phone', '<=mobile'){
-                    font-size: 12px;
+                // @include media('>phone', '<=mobile'){
+                //     font-size: 12px;
 
-                }
-                @include media('>smphone', '<=phone'){
+                // }
+                // @include media('>smphone', '<=phone'){
             
-                }
-                @include media('>mobile', '<=largemb'){
+                // }
+                // @include media('>mobile', '<=largemb'){
             
-                }
-                @include media('>largemb', '<=tablet'){
+                // }
+                // @include media('>largemb', '<=tablet'){
             
-                }
+                // }
             }
         }
     }

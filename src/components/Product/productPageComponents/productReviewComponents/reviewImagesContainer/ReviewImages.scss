@@ -1,4 +1,4 @@
-@import "../../../../breakpoints.scss";
+// @import "../../../../breakpoints.scss";
 
 .imgContainer{
     display: flex;
@@ -11,27 +11,27 @@
         border-radius: 10px;
     }
 
-    @include media('>phone', '<=mobile'){
-        width: unset;
-        overflow: scroll;
-        gap: 5px;
-        img{
-            width: 80px;
-        }
+    // @include media('>phone', '<=mobile'){
+    //     width: unset;
+    //     overflow: scroll;
+    //     gap: 5px;
+    //     img{
+    //         width: 80px;
+    //     }
 
-    }
-    @include media('>smphone', '<=phone'){
+    // }
+    // @include media('>smphone', '<=phone'){
 
-    }
-    @include media('>mobile', '<=largemb'){
-        width: unset;
-        overflow: scroll;
-        gap: 5px;
-        img{
-            width: 80px;
-        }
-    }
-    @include media('>largemb', '<=tablet'){
+    // }
+    // @include media('>mobile', '<=largemb'){
+    //     width: unset;
+    //     overflow: scroll;
+    //     gap: 5px;
+    //     img{
+    //         width: 80px;
+    //     }
+    // }
+    // @include media('>largemb', '<=tablet'){
 
-    }
+    // }
 }

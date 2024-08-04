@@ -1,5 +1,5 @@
-import "./ratingStars.css"
 
+import "./ratingStars.scss"
 export default function RatingStars() {
     return (
         <ul className="featureProductRating">

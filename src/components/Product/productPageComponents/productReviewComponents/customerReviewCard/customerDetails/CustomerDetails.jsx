@@ -1,4 +1,4 @@
-import "./customerDetails.css"
+import "./customerDetails.scss"
 
 export default function CustomerDetails() {
     // const PF = process.env.REACT_APP_PUBLIC_FOLDER;

@@ -1,5 +1,5 @@
-import "./productNameDescription.css"
 
+import "./productNameDescription.scss"
 export default function ProductNameDescription({des, name}) {
     return (
         <div className="productNameDescriptionContainer">

@@ -1,4 +1,4 @@
-import "./productPrice.css"
+import "./productPrice.scss"
 
 export default function ProductPrice({price}) {
     return (

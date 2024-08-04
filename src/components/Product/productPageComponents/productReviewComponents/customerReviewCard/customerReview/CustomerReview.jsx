@@ -1,5 +1,5 @@
-import "./customerReview.css"
 
+import "./customerReview.scss"
 export default function CustomerReview() {
     return (
         <div className="reviewDescription">

@@ -1,4 +1,4 @@
-import "./reviewStars.css"
+import "./reviewStars.scss"
 
 export default function ReviewStars() {
     return (

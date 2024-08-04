@@ -1,5 +1,5 @@
-import "./productDescription.css"
 
+import "./productDescription.scss"
 export default function ProductDescription() {
     return (
         <div className="productDescriptionSection">

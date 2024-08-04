@@ -1,4 +1,4 @@
-import "./brandSection.css"
+import "./brandSection.scss"
 
 export default function BrandSection() {
     // const PF = process.env.REACT_APP_PUBLIC_FOLDER;

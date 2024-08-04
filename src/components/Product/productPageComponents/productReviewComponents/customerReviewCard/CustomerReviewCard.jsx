@@ -3,7 +3,7 @@ import CustomerDetails from "./customerDetails/CustomerDetails"
 import CustomerProductDetails from "./customerProductDetails/CustomerProductDetails"
 import CustomerRating from "./customerRating/CustomerRating"
 import CustomerReview from "./customerReview/CustomerReview"
-import "./customerReviewCard.css"
+import "./customerReviewCard.scss"
 
 export default function CustomerReviewCard() {
     return (

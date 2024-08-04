@@ -1,4 +1,4 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .similarProductsSection{
     .heading{
@@ -13,26 +13,26 @@
         // overflow-x: scroll;
         gap: 15px;
         // width: 80%;
-        @include media('>phone', '<=mobile'){
-            display: -webkit-box;
-            overflow: scroll;
-            padding: 10px
+        // @include media('>phone', '<=mobile'){
+        //     display: -webkit-box;
+        //     overflow: scroll;
+        //     padding: 10px
 
-        }
-        @include media('>smphone', '<=phone'){
-                        display: -webkit-box;
-            overflow: scroll;
-            padding: 10px
-        }
-        @include media('>mobile', '<=largemb'){
-                        display: -webkit-box;
-            overflow: scroll;
-            padding: 10px
-        }
-        @include media('>largemb', '<=tablet'){
-                        display: -webkit-box;
-            overflow: scroll;
-            padding: 10px
-        }
+        // }
+        // @include media('>smphone', '<=phone'){
+        //                 display: -webkit-box;
+        //     overflow: scroll;
+        //     padding: 10px
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //                 display: -webkit-box;
+        //     overflow: scroll;
+        //     padding: 10px
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //                 display: -webkit-box;
+        //     overflow: scroll;
+        //     padding: 10px
+        // }
     }
 }

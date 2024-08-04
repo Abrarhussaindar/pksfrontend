@@ -1,6 +1,6 @@
-import "./ratingProgressBar.css"
-import ProgressBar from "../../../progressBar/ProgressBar"
 
+import ProgressBar from "../../../../progressBar/ProgressBar"
+import "./ratingProgressBar.scss"
 export default function RatingProgressBar() {
     return (
         <div className="ratingProgressBar">

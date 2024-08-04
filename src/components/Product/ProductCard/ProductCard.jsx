@@ -3,25 +3,24 @@ import { Link } from 'react-router-dom'
 
 import star_fill from "../../../assets/images/star-fill.png"
 import start_outline from "../../../assets/images/star-outline.png"
-import shirt from "../../../assets/images/products/shirt.jpg"
 
-export const ProductCard = ({product, subcate}) => {
+export const ProductCard = ({product}) => {
     const [path, setPath] = useState("")
     useEffect(()=>{
 
         try{
-            const link = `/products/${subcate}/${subcate}/${product._id}`
+            const link = `/products/${product?.category}/${product?.subCategory}/${product?.productId}`
             setPath(link)
         }catch(err){    
             console.log(err)
         }
-    },[product, subcate])
+    },[product])
 
     return (
         <div className="productCard">
             <div className="productImgContainer">
                 <Link to={path}>
-                    <img src={shirt} alt="" />
+                    <img src={product?.image} alt="" />
                 </Link>
 
                 {/* <ul className="shirtColors">
@@ -33,7 +32,7 @@ export const ProductCard = ({product, subcate}) => {
             </div>
             <hr className="productCardHr"/>
             <div className="productDetailsContainer">
-                <h4>{product ? product.title : ""}</h4>
+                <h4>{product?.title}</h4>
                 {/* <p>Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeve</p> */}
             
                 <ul className="productCardRating">
@@ -45,14 +44,14 @@ export const ProductCard = ({product, subcate}) => {
                         <img src={start_outline} alt="" />
                         <span>
 
-                            - 2000
+                            - {product?.rating}
                         </span>
                     </li>
                 </ul>
                 <div className="productPrice">
                     <div className="prices">
                         <span>&#x20B9;</span>
-                        <h4>{product ? product.price : ""}</h4>
+                        <h4>{product?.price}</h4>
                     </div>
                     <p>M.R.P: <span>&#x20B9;1000</span><span className="discounts">(75% off)</span> </p>
                     

@@ -1,4 +1,3 @@
-import "./productReviewSection.css"
 
 import SearchReview from "../productReviewComponents/SearchReviewContainer/SearchReview"
 import ReviewStars from "../productReviewComponents/reviewStars/ReviewStars"
@@ -9,7 +8,7 @@ import ReviewImages from "../productReviewComponents/reviewImagesContainer/Revie
 import ReviewTags from "../productReviewComponents/reviewTags/ReviewTags"
 import CustomerReviewCard from "../productReviewComponents/customerReviewCard/CustomerReviewCard"
 // import RatingStars from "../productReviewComponents/featureReivews/ratingStars/RatingStars"
-
+import "./productReviewSection.scss"
 export default function ProductReviewSection() {
     return (
         <div className="productReviewsSection">

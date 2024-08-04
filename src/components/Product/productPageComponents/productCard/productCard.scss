@@ -1,4 +1,4 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 
 
@@ -10,19 +10,19 @@
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
-    @include media('>phone', '<=mobile'){
-        width: 45%;
+    // @include media('>phone', '<=mobile'){
+    //     width: 45%;
         
-    }
-    @include media('>smphone', '<=phone'){
-        width: 45%;
-    }
-    @include media('>phone', '<=largemb'){
-        width: 45%;
-    }
-    @include media('>largemb', '<=tablet'){
-        width: 30%;
-    }
+    // }
+    // @include media('>smphone', '<=phone'){
+    //     width: 45%;
+    // }
+    // @include media('>phone', '<=largemb'){
+    //     width: 45%;
+    // }
+    // @include media('>largemb', '<=tablet'){
+    //     width: 30%;
+    // }
     .productCardHr{
         border-color: var(--un-color);
         margin: 5px;
@@ -92,10 +92,10 @@
             font-size: 18px;
             font-weight: 600;
 
-            @include media('>phone', '<=mobile'){
-                font-size: 16px;
+            // @include media('>phone', '<=mobile'){
+            //     font-size: 16px;
                 
-            }
+            // }
         }
         p{
             font-size: 16px;
@@ -109,35 +109,35 @@
                 align-items: center;
                 .starFill{
                     width: 18px;
-                    @include media('>phone', '<=mobile'){
-                        width: 16px;
+                    // @include media('>phone', '<=mobile'){
+                    //     width: 16px;
                         
-                    }
-                    @include media('>smphone', '<=phone'){
-                        width: 16px;
-                    }
-                    @include media('>phone', '<=largemb'){
-                        width: 16px;
-                    }
-                    @include media('>largemb', '<=tablet'){
-                        width: 16px;
-                    }
+                    // }
+                    // @include media('>smphone', '<=phone'){
+                    //     width: 16px;
+                    // }
+                    // @include media('>phone', '<=largemb'){
+                    //     width: 16px;
+                    // }
+                    // @include media('>largemb', '<=tablet'){
+                    //     width: 16px;
+                    // }
                 }
                 img{
                     width: 16px;
-                    @include media('>phone', '<=mobile'){
-                        width: 14px;
+                    // @include media('>phone', '<=mobile'){
+                    //     width: 14px;
                         
-                    }
-                    @include media('>smphone', '<=phone'){
-                        width: 14px;
-                    }
-                    @include media('>phone', '<=largemb'){
-                        width: 14px;
-                    }
-                    @include media('>largemb', '<=tablet'){
-                        width: 14px;
-                    }
+                    // }
+                    // @include media('>smphone', '<=phone'){
+                    //     width: 14px;
+                    // }
+                    // @include media('>phone', '<=largemb'){
+                    //     width: 14px;
+                    // }
+                    // @include media('>largemb', '<=tablet'){
+                    //     width: 14px;
+                    // }
                 }
                 span{
                     margin-left: 10px;

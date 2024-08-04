@@ -1,4 +1,4 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .otherImageContainer{
     display: flex;
@@ -6,49 +6,49 @@
     padding: 10px;
     gap: 20px;
 
-    @include media('>phone', '<=mobile'){
-        flex-direction: unset;
-        padding: unset;
-        gap: 20px;
-        overflow: scroll;
-        margin: 10px 0;
-    }
-    @include media('>smphone', '<=phone'){
-        flex-direction: unset;
-        padding: unset;
-        gap: 20px;
-        overflow: scroll;
-        margin: 10px 0;
-    }
-    @include media('>mobile', '<=largemb'){
-        flex-direction: unset;
-        padding: unset;
-        gap: 20px;
-        overflow: scroll;
-        margin: 10px 0;
-    }
-    @include media('>largemb', '<=tablet'){
-        flex-direction: unset;
-        padding: unset;
-        gap: 20px;
-        overflow: scroll;
-        margin: 10px 0;
-    }
+    // @include media('>phone', '<=mobile'){
+    //     flex-direction: unset;
+    //     padding: unset;
+    //     gap: 20px;
+    //     overflow: scroll;
+    //     margin: 10px 0;
+    // }
+    // @include media('>smphone', '<=phone'){
+    //     flex-direction: unset;
+    //     padding: unset;
+    //     gap: 20px;
+    //     overflow: scroll;
+    //     margin: 10px 0;
+    // }
+    // @include media('>mobile', '<=largemb'){
+    //     flex-direction: unset;
+    //     padding: unset;
+    //     gap: 20px;
+    //     overflow: scroll;
+    //     margin: 10px 0;
+    // }
+    // @include media('>largemb', '<=tablet'){
+    //     flex-direction: unset;
+    //     padding: unset;
+    //     gap: 20px;
+    //     overflow: scroll;
+    //     margin: 10px 0;
+    // }
     // border: 1px solid black;
     .active{
         border: 1px solid var(--hover-color);
-        @include media('>phone', '<=mobile'){
-            border: unset;
-        }
-        @include media('>smphone', '<=phone'){
-            border: unset;
-        }
-        @include media('>mobile', '<=largemb'){
-            border: unset;
-        }
-        @include media('>largemb', '<=tablet'){
-            border: unset;
-        }
+        // @include media('>phone', '<=mobile'){
+        //     border: unset;
+        // }
+        // @include media('>smphone', '<=phone'){
+        //     border: unset;
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //     border: unset;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //     border: unset;
+        // }
     }
     img{
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -58,20 +58,20 @@
         border-radius: 10px;
         cursor: pointer;
 
-        @include media('>phone', '<=mobile'){
-            width: 40%;
-        }
-        @include media('>smphone', '<=phone'){
+        // @include media('>phone', '<=mobile'){
+        //     width: 40%;
+        // }
+        // @include media('>smphone', '<=phone'){
     
-            width: 40%;
-        }
-        @include media('>mobile', '<=largemb'){
-            width: 40%;
-        }
-        @include media('>largemb', '<=tablet'){
-            width: 40%;
+        //     width: 40%;
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //     width: 40%;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //     width: 40%;
     
-        }
+        // }
     }
 }
 .productImageContainer{
@@ -89,19 +89,19 @@
         cursor: pointer;
     }
 
-    @include media('>phone', '<=mobile'){
-        display: none;
-    }
-    @include media('>smphone', '<=phone'){
-        display: none;
+    // @include media('>phone', '<=mobile'){
+    //     display: none;
+    // }
+    // @include media('>smphone', '<=phone'){
+    //     display: none;
 
-    }
-    @include media('>mobile', '<=largemb'){
-        display: none;
+    // }
+    // @include media('>mobile', '<=largemb'){
+    //     display: none;
 
-    }
-    @include media('>largemb', '<=tablet'){
-        display: none;
+    // }
+    // @include media('>largemb', '<=tablet'){
+    //     display: none;
 
-    }
+    // }
 }

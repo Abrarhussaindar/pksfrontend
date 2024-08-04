@@ -1,5 +1,5 @@
 import ProductSeller from "../productSeller/ProductSeller"
-import "./productStock.css"
+import "./productStock.scss"
 
 export default function ProductStock() {
     return (

@@ -1,5 +1,5 @@
 import ProductCard from "../productCard/ProductCard"
-import "./similarProducts.css"
+import "./similarProducts.scss"
 
 
 export default function SimilarProducts() {

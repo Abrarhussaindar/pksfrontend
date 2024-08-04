@@ -1,4 +1,4 @@
-import "./productManufacturer.css"
+import "./productManufacturer.scss"
 
 export default function ProductManufacturer() {
     return (

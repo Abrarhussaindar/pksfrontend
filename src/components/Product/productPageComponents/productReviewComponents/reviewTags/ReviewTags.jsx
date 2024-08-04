@@ -1,4 +1,4 @@
-import "./reviewTags.css"
+import "./reviewTags.scss"
 
 export default function ReviewTags() {
     return (

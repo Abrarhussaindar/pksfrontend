@@ -371,6 +371,97 @@ main {
     padding: $base-padding $base-padding * 4;
 }
 
+
+.SingleProductPage{
+    height: unset !important;
+
+    .productContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+    
+        // @include media('>phone', '<=mobile'){
+        //     padding: 0 15px;
+        // }
+        // @include media('>smphone', '<=phone'){
+        //     padding: 0 15px;
+        // }
+        // @include media('>phone', '<=largemb'){
+        //     padding: 0 15px;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //     padding: 0 15px;
+        // }
+        .mainSection{
+            display: flex;
+            margin-top: 5px;
+            // @include media('>phone', '<=mobile'){
+            //     flex-direction: column;
+            // }
+            // @include media('>smphone', '<=phone'){
+            //     flex-direction: column;
+            // }
+            // @include media('>phone', '<=largemb'){
+            //     flex-direction: column;
+            // }
+            // @include media('>largemb', '<=tablet'){
+            //     flex-direction: column;
+            // }
+            .left{
+                flex: 6;
+                display: flex;
+                // justify-content: space-around;
+                height: 500px;
+                // border: 1px solid black;
+                justify-content: center;
+                gap: 30px;
+    
+                // @include media('>phone', '<=mobile'){
+                //     flex-direction: row-reverse;
+                //     height: unset;
+                //     gap: 10px;
+                    
+                // }
+                // @include media('>smphone', '<=phone'){
+                //     flex-direction: row-reverse;
+                //     height: unset;
+                //     gap: 10px;
+                    
+                // }
+                // @include media('>phone', '<=largemb'){
+                //     flex-direction: row-reverse;
+                //     height: unset;
+                //     gap: 10px;
+                    
+                // }
+                // @include media('>largemb', '<=tablet'){
+                //     flex-direction: row-reverse;
+                //     height: unset;
+                //     gap: 10px;
+                    
+                // }
+            }
+            .right{
+                height: 650px;
+                overflow-y: scroll;
+                flex: 6;
+                .aboutItemContainer{
+                    .productColor{
+                        margin: 20px 0;
+                    }
+                    .productSize{
+                        margin: 15px 0;
+                        width: 40%;
+                    }
+                }
+            }
+        }
+        .simiHr{
+            margin: 15px 0;
+        }
+    }
+}
 .productCard {
     // height: 500px;
     width: 23%;

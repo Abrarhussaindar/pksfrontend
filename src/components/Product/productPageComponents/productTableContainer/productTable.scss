@@ -1,4 +1,4 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .productTable{
     margin: 15px 0;
@@ -13,19 +13,19 @@
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid var(--un-color);
-            @include media('>phone', '<=mobile'){
-                font-size: 14px;
-                padding: 0;
-            }
-            @include media('>smphone', '<=phone'){
+            // @include media('>phone', '<=mobile'){
+            //     font-size: 14px;
+            //     padding: 0;
+            // }
+            // @include media('>smphone', '<=phone'){
         
-            }
-            @include media('>mobile', '<=largemb'){
+            // }
+            // @include media('>mobile', '<=largemb'){
         
-            }
-            @include media('>largemb', '<=tablet'){
+            // }
+            // @include media('>largemb', '<=tablet'){
         
-            }
+            // }
         }
         td{
             font-size: 14px;
@@ -33,19 +33,19 @@
             padding: 10px;
             text-align: left;
             border-bottom: 1px solid var(--un-color);
-            @include media('>phone', '<=mobile'){
-                font-size: 12px;
-                padding: 0 5px;
-            }
-            @include media('>smphone', '<=phone'){
+            // @include media('>phone', '<=mobile'){
+            //     font-size: 12px;
+            //     padding: 0 5px;
+            // }
+            // @include media('>smphone', '<=phone'){
         
-            }
-            @include media('>mobile', '<=largemb'){
+            // }
+            // @include media('>mobile', '<=largemb'){
         
-            }
-            @include media('>largemb', '<=tablet'){
+            // }
+            // @include media('>largemb', '<=tablet'){
         
-            }
+            // }
         }
     }
 }

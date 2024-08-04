@@ -1,59 +1,59 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .productDetailsSection{
     h4{
         font-size: 24px;
         font-weight: 500;
-        @include media('>phone', '<=mobile'){
-            font-size: 22px;
+        // @include media('>phone', '<=mobile'){
+        //     font-size: 22px;
 
-        }
-        @include media('>smphone', '<=phone'){
-            font-size: 22px;
-        }
-        @include media('>mobile', '<=largemb'){
-            font-size: 22px;
-        }
-        @include media('>largemb', '<=tablet'){
-            font-size: 22px;
-        }
+        // }
+        // @include media('>smphone', '<=phone'){
+        //     font-size: 22px;
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //     font-size: 22px;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //     font-size: 22px;
+        // }
     }
     table{
         tr{
             display: flex;
             align-items: center;
-            @include media('>phone', '<=mobile'){
-                display: inherit;
+            // @include media('>phone', '<=mobile'){
+            //     display: inherit;
     
-            }
-            @include media('>smphone', '<=phone'){
-                display: inherit;
-            }
-            @include media('>mobile', '<=largemb'){
-                display: inherit;
-            }
-            @include media('>largemb', '<=tablet'){
-                display: inherit;
-            }
+            // }
+            // @include media('>smphone', '<=phone'){
+            //     display: inherit;
+            // }
+            // @include media('>mobile', '<=largemb'){
+            //     display: inherit;
+            // }
+            // @include media('>largemb', '<=tablet'){
+            //     display: inherit;
+            // }
             th{
                 font-size: 16px;
                 font-weight: 500;
                 padding: 5px;
                 text-align: left;
                 border-bottom: 1px solid var(--un-color);
-                @include media('>phone', '<=mobile'){
-                    font-size: 14px;
+                // @include media('>phone', '<=mobile'){
+                //     font-size: 14px;
         
-                }
-                @include media('>smphone', '<=phone'){
-                    font-size: 14px;
-                }
-                @include media('>mobile', '<=largemb'){
-                    font-size: 14px;
-                }
-                @include media('>largemb', '<=tablet'){
-                    font-size: 14px;
-                }
+                // }
+                // @include media('>smphone', '<=phone'){
+                //     font-size: 14px;
+                // }
+                // @include media('>mobile', '<=largemb'){
+                //     font-size: 14px;
+                // }
+                // @include media('>largemb', '<=tablet'){
+                //     font-size: 14px;
+                // }
                 .tspan{
                     margin-left: 10px;
                 }
@@ -65,19 +65,19 @@
                 text-align: left;
                 border-bottom: 1px solid var(--un-color);
             
-                @include media('>phone', '<=mobile'){
-                    font-size: 12px;
+                // @include media('>phone', '<=mobile'){
+                //     font-size: 12px;
         
-                }
-                @include media('>smphone', '<=phone'){
-                    font-size: 12px;
-                }
-                @include media('>mobile', '<=largemb'){
-                    font-size: 12px;
-                }
-                @include media('>largemb', '<=tablet'){
-                    font-size: 12px;
-                }
+                // }
+                // @include media('>smphone', '<=phone'){
+                //     font-size: 12px;
+                // }
+                // @include media('>mobile', '<=largemb'){
+                //     font-size: 12px;
+                // }
+                // @include media('>largemb', '<=tablet'){
+                //     font-size: 12px;
+                // }
                 ul{
                     list-style: none;
                     li{

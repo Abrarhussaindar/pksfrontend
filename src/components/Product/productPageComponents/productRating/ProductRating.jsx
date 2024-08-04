@@ -1,5 +1,5 @@
-import "./productRating.css"
 
+import "./productRating.scss"
 export default function ProductRating() {
     return (
         <ul className="productRating">

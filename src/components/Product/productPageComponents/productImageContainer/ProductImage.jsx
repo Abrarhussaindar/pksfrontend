@@ -1,7 +1,7 @@
-import "./productImage.css"
+import "./productImage.scss"
 
 export default function ProductImage({image}) {
-    console.log("img", image)
+    
     return (
         <>
         

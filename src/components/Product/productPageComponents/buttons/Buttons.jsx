@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
-import "./buttons.css"
-import axios from "../../../api/axios"
+import axios from "../../../../axios"
+import "./buttons.scss"
+// import axios from "../../../api/axios"
 
 export default function Buttons({ product }) {
     console.log("butn: ", product._id)

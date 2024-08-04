@@ -1,5 +1,5 @@
-import "./searchReview.css"
 
+import "./searchReview.scss"
 export default function SearchReview() {
     // const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     return (

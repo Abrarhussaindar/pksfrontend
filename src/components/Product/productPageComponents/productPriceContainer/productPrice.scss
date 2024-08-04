@@ -1,21 +1,21 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .priceContainer{
     display: flex;
     align-items: baseline;
     gap: 5px;
-    @include media('>phone', '<=mobile'){
-        margin: 10px 0;
-    }
-    @include media('>smphone', '<=phone'){
-        margin: 10px 0;
-    }
-    @include media('>mobile', '<=largemb'){
-        margin: 10px 0;
-    }
-    @include media('>largemb', '<=tablet'){
-        margin: 10px 0;
-    }
+    // @include media('>phone', '<=mobile'){
+    //     margin: 10px 0;
+    // }
+    // @include media('>smphone', '<=phone'){
+    //     margin: 10px 0;
+    // }
+    // @include media('>mobile', '<=largemb'){
+    //     margin: 10px 0;
+    // }
+    // @include media('>largemb', '<=tablet'){
+    //     margin: 10px 0;
+    // }
     .prices{
         margin-left: 20px;
         font-size: 28px;

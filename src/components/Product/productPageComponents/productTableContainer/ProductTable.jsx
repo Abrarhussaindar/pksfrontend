@@ -1,4 +1,4 @@
-import "./productTable.css"
+import "./productTable.scss"
 
 export default function ProductTable() {
     return (

@@ -1,4 +1,4 @@
-import "./ReviewImages.css"
+import "./ReviewImages.scss"
 
 export default function ReviewImages() {
     return (

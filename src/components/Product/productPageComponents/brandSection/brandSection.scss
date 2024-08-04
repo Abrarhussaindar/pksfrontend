@@ -1,4 +1,4 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .brandSection{
     display: flex;
@@ -20,23 +20,23 @@
         display: flex;
         justify-content: flex-start;
         gap: 50px;
-        @include media('>phone', '<=mobile'){
-            flex-direction: column;
-            gap: 0;
+        // @include media('>phone', '<=mobile'){
+        //     flex-direction: column;
+        //     gap: 0;
 
-        }
-        @include media('>smphone', '<=phone'){
-                        flex-direction: column;
-            gap: 0;
-        }
-        @include media('>mobile', '<=largemb'){
-                        flex-direction: column;
-            gap: 0;
-        }
-        @include media('>largemb', '<=tablet'){
-                        flex-direction: column;
-            gap: 0;
-        }
+        // }
+        // @include media('>smphone', '<=phone'){
+        //                 flex-direction: column;
+        //     gap: 0;
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //                 flex-direction: column;
+        //     gap: 0;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //                 flex-direction: column;
+        //     gap: 0;
+        // }
         .left{
             margin-top: 10px;
             padding-right: 50px;

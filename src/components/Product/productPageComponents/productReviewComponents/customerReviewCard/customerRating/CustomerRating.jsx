@@ -1,4 +1,4 @@
-import "./customerRating.css"
+import "./customerRating.scss"
 
 export default function CustomerRating() {
     return (

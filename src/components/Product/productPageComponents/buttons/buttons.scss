@@ -1,4 +1,4 @@
-@import "../../../breakpoints.scss";
+// @import "../../../breakpoints.scss";
 
 .btnsContainer{
     display: flex;
@@ -7,18 +7,18 @@
     justify-content: flex-start;
     margin-bottom: 10px;
 
-    @include media('>phone', '<=mobile'){
+    // @include media('>phone', '<=mobile'){
 
-    }
-    @include media('>smphone', '<=phone'){
+    // }
+    // @include media('>smphone', '<=phone'){
 
-    }
-    @include media('>mobile', '<=largemb'){
+    // }
+    // @include media('>mobile', '<=largemb'){
 
-    }
-    @include media('>largemb', '<=tablet'){
+    // }
+    // @include media('>largemb', '<=tablet'){
 
-    }
+    // }
     .addToCart{
         background-color: var(--hover-color);
         color: white;
@@ -35,22 +35,22 @@
             background-color: var(--main-color);
             transition: all 0.3s ease-in-out;
         }
-        @include media('>phone', '<=mobile'){
-            width: unset;
-            font-size: 16px;
-        }
-        @include media('>smphone', '<=phone'){
-                        width: unset;
-            font-size: 14px;
-        }
-        @include media('>mobile', '<=largemb'){
-                        width: unset;
-            font-size: 16px;
-        }
-        @include media('>largemb', '<=tablet'){
-                        width: unset;
-            font-size: 16px;
-        }
+        // @include media('>phone', '<=mobile'){
+        //     width: unset;
+        //     font-size: 16px;
+        // }
+        // @include media('>smphone', '<=phone'){
+        //                 width: unset;
+        //     font-size: 14px;
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //                 width: unset;
+        //     font-size: 16px;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //                 width: unset;
+        //     font-size: 16px;
+        // }
     }
     .buyNow{
         background-color: var(--main-color);
@@ -70,21 +70,21 @@
             // background-color: var(--hover-color);
             transition: all 0.3s ease-in-out;
         }
-        @include media('>phone', '<=mobile'){
-            width: unset;
-            font-size: 16px;
-        }
-        @include media('>smphone', '<=phone'){
-            width: unset;
-            font-size: 14px;
-        }
-        @include media('>mobile', '<=largemb'){
-            width: unset;
-            font-size: 16px;
-        }
-        @include media('>largemb', '<=tablet'){
-            width: unset;
-            font-size: 16px;
-        }
+        // @include media('>phone', '<=mobile'){
+        //     width: unset;
+        //     font-size: 16px;
+        // }
+        // @include media('>smphone', '<=phone'){
+        //     width: unset;
+        //     font-size: 14px;
+        // }
+        // @include media('>mobile', '<=largemb'){
+        //     width: unset;
+        //     font-size: 16px;
+        // }
+        // @include media('>largemb', '<=tablet'){
+        //     width: unset;
+        //     font-size: 16px;
+        // }
     }
 }
