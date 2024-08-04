@@ -48,15 +48,17 @@ header {
     .headerRightSide {
         .cart {
             position: relative;
-
-            .cartCount {
-                position: absolute;
-                background-color: red;
-                padding: 5px 10px;
-                border-radius: $base-border-radius * 5;
-                top: -30%;
-                right: -40%;
-                font-size: 12px;
+            a {
+                color: white;
+                .cartCount {
+                    position: absolute;
+                    background-color: red;
+                    padding: 5px 10px;
+                    border-radius: $base-border-radius * 5;
+                    top: -30%;
+                    right: -40%;
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -92,7 +94,9 @@ header {
         color: black;
         transform: translateX(500px);
         transition: all 0.5s ease-in-out;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow:
+            rgba(0, 0, 0, 0.3) 0px 19px 38px,
+            rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
         // @include media('>phone', '<=mobile'){
         //     // transform: translateX(500px);
@@ -292,11 +296,262 @@ header {
         rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-// right side bar
+// secondary header
 
+.secondaryNavbarContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: $secondary;
+    // position: sticky;
+    // top: 9.3%;
+    // z-index: 3;
+    // @include media('>phone', '<=mobile'){
+    //     height: 50px;
+    // }
+    // @include media('>smphone', '<=phone'){
+    //     height: 50px;
+
+    // }
+    // @include media('>phone', '<=largemb'){
+    //     height: 60px;
+    // }
+    .container {
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: white;
+
+            img {
+                width: 25px;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                // @include media('>phone', '<=mobile'){
+                //     width: 20px;
+                // }
+                // @include media('>smphone', '<=phone'){
+                //     width: 18px;
+
+                // }
+                // @include media('>phone', '<=largemb'){
+                //     width: 20px;
+                // }
+            }
+
+            span {
+                font-size: 14px;
+
+                // @include media('>phone', '<=mobile'){
+                //     font-size: 10px;
+                // }
+                // @include media('>smphone', '<=phone'){
+                //     font-size: 8px;
+
+                // }
+                // @include media('>phone', '<=largemb'){
+                //     font-size: 12px;
+                // }
+            }
+        }
+    }
+}
 // home
 main {
     height: calc(100vh - 80px);
+    border: 1px solid black;
+    padding: $base-padding $base-padding * 4;
+}
+
+.productCard {
+    // height: 500px;
+    width: 23%;
+    // border: 1px solid var(--un-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+        rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    // @include media(">phone", "<=mobile") {
+    //     width: 45%;
+    // }
+    // @include media(">smphone", "<=phone") {
+    //     width: 45%;
+    // }
+    // @include media(">phone", "<=largemb") {
+    //     width: 45%;
+    // }
+    // @include media(">largemb", "<=tablet") {
+    //     width: 30%;
+    // }
+    .productCardHr {
+        border-color: var(--un-color);
+        margin: 5px;
+        // padding: 20px;
+    }
+    .productImgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: var(--un-color);
+
+        padding: 10px;
+        a {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 50%;
+            }
+        }
+
+        .shirtColors {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            list-style: none;
+            margin-top: 10px;
+            .active {
+                border: 2px solid var(--hover-color);
+                padding: 9px;
+            }
+            li {
+                width: 18px;
+                height: 18px;
+                border-radius: 50px;
+            }
+
+            .black {
+                background-color: black;
+            }
+            .white {
+                background-color: white;
+            }
+            .green {
+                background-color: green;
+            }
+            .yellow {
+                background-color: yellow;
+            }
+            .blue {
+                background-color: blue;
+            }
+        }
+    }
+
+    .productDetailsContainer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        text-align: center;
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+
+            // @include media(">phone", "<=mobile") {
+            //     font-size: 16px;
+            // }
+        }
+        p {
+            font-size: 16px;
+        }
+
+        .productCardRating {
+            list-style: none;
+            margin-top: 5px;
+            li {
+                display: flex;
+                align-items: center;
+                .starFill {
+                    width: 18px;
+                    // @include media(">phone", "<=mobile") {
+                    //     width: 16px;
+                    // }
+                    // @include media(">smphone", "<=phone") {
+                    //     width: 16px;
+                    // }
+                    // @include media(">phone", "<=largemb") {
+                    //     width: 16px;
+                    // }
+                    // @include media(">largemb", "<=tablet") {
+                    //     width: 16px;
+                    // }
+                }
+                img {
+                    width: 16px;
+                    // @include media(">phone", "<=mobile") {
+                    //     width: 14px;
+                    // }
+                    // @include media(">smphone", "<=phone") {
+                    //     width: 14px;
+                    // }
+                    // @include media(">phone", "<=largemb") {
+                    //     width: 14px;
+                    // }
+                    // @include media(">largemb", "<=tablet") {
+                    //     width: 14px;
+                    // }
+                }
+                span {
+                    margin-left: 10px;
+                    color: var(--hover-color);
+                }
+            }
+        }
+
+        .productPrice {
+            display: flex;
+            // align-items: baseline;
+            flex-direction: column;
+            gap: 5px;
+
+            .prices {
+                font-size: 22px;
+                font-weight: 500;
+                // position: absolute;
+                position: relative;
+                span {
+                    position: absolute;
+                    font-size: 15px;
+                    left: 30%;
+                    color: var(--hover-color);
+                }
+                h4 {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: var(--hover-color);
+                }
+            }
+            p {
+                font-size: 12px;
+                color: var(--main-color);
+                display: flex;
+                gap: 10px;
+                span {
+                    text-decoration: line-through;
+                }
+            }
+            .discounts {
+                font-size: 14px;
+            }
+        }
+        .deliveryOptions {
+            font-size: 14px;
+        }
+    }
 }
 
 footer {

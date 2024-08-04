@@ -1,0 +1,94 @@
+@import "../../../breakpoints.scss";
+
+.brandSection{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    .heading{
+        display: flex;
+        align-items: center;
+        img{
+            width: 90px;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+    }
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        gap: 50px;
+        @include media('>phone', '<=mobile'){
+            flex-direction: column;
+            gap: 0;
+
+        }
+        @include media('>smphone', '<=phone'){
+                        flex-direction: column;
+            gap: 0;
+        }
+        @include media('>mobile', '<=largemb'){
+                        flex-direction: column;
+            gap: 0;
+        }
+        @include media('>largemb', '<=tablet'){
+                        flex-direction: column;
+            gap: 0;
+        }
+        .left{
+            margin-top: 10px;
+            padding-right: 50px;
+            border-right: 2px solid var(--un-color);
+            ul{
+                list-style: none;
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 10px;
+                    span{
+
+                        img{
+                            width: 18px;
+                        }
+                        margin-right: 10px;
+                    }
+                        font-size: 14px;
+                        font-weight: 500;
+                    
+                }
+            }
+        }
+
+        .right{
+            margin-top: 10px;
+            h4{
+                font-size: 14px;
+                font-weight: 600;
+                // margin-bottom: 10px;
+            }
+            .rate{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                gap: 20px;
+                .inner{
+                    display: flex;
+                    align-items: center;
+                    background-color: var(--un-color);
+                    padding: 3px 10px;
+                    gap: 5px;
+                    img{
+                        width: 15px;
+                    }
+                    span{
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

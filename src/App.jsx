@@ -19,6 +19,9 @@ import { Order } from './pages/Order/Order';
 import { Wishlist } from './pages/Wishlist/Wishlist';
 import { Help } from './pages/Help/Help';
 import { CustomerServices } from './pages/CustomerServices/CustomerServices';
+import { Products } from './pages/Products/Category/Products';
+import { Product } from './pages/Products/Product/Product';
+
 
 export const App = () => {
   const ScrollToTop = () => {
@@ -34,8 +37,11 @@ export const App = () => {
     <Router>
       <ScrollToTop />
       <Routes>
+        {/* header routes */}
         <Route exact path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
+
+        {/* footer routes */}
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/services" element={<Services />} />
@@ -47,11 +53,19 @@ export const App = () => {
         <Route path="/site-map" element={<SiteMap />} />
         <Route path="/return-refund" element={<ReturnRefund />} />
 
+        {/* right side routes */}
         <Route path="/profile" element={<Profile />} />
         <Route path="/orders" element={<Order />} />
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/help" element={<Help />} />
         <Route path="/customer-service" element={<CustomerServices />} />
+
+        {/* product routes */}
+        <Route path="/products/:category" element={<Products />} />
+        <Route exact path="/products/:category/:subcategory/:id" element={<Product />} />
+        {/* <Route path="/products/mens" element={<Mens />} /> */}
+
+
 
         <Route path="*" element={<NoPage />} />
       </Routes>

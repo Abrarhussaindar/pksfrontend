@@ -1,0 +1,47 @@
+@import "../../../../../breakpoints.scss";
+
+.productDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    .size,.color{
+        border-right: 1px solid var(--hover-color);
+        padding-right: 50px;
+
+        @include media('>phone', '<=mobile'){
+            padding-right: 20px;
+            font-size: 14px;
+
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>mobile', '<=largemb'){
+            padding-right: 30px;
+            font-size: 14px;
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
+    }
+    .proSpan{
+        margin-left: 5px;
+        color: var(--hover-color);
+        font-weight: 500;
+
+        @include media('>phone', '<=mobile'){
+            font-size: 14px;
+
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>mobile', '<=largemb'){
+            font-size: 14px;
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
+    }
+}

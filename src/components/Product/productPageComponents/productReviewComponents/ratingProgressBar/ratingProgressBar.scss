@@ -1,0 +1,30 @@
+.ratingProgressBar{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px 0;
+    .bar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 30px;
+        .css-7p5u54{
+            height: 20px !important;
+            width: 50%;
+            background-color: var(--un-color);
+            border-radius: 10px;
+        }
+        .css-t752vm{
+            background-color: var(--hover-color);
+            border-radius: 10px;
+        }
+        span{
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--hover-color);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@import "../../../breakpoints.scss";
+
+.btnsContainer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+
+    @include media('>phone', '<=mobile'){
+
+    }
+    @include media('>smphone', '<=phone'){
+
+    }
+    @include media('>mobile', '<=largemb'){
+
+    }
+    @include media('>largemb', '<=tablet'){
+
+    }
+    .addToCart{
+        background-color: var(--hover-color);
+        color: white;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 20%;
+        &:hover{
+            background-color: var(--main-color);
+            transition: all 0.3s ease-in-out;
+        }
+        @include media('>phone', '<=mobile'){
+            width: unset;
+            font-size: 16px;
+        }
+        @include media('>smphone', '<=phone'){
+                        width: unset;
+            font-size: 14px;
+        }
+        @include media('>mobile', '<=largemb'){
+                        width: unset;
+            font-size: 16px;
+        }
+        @include media('>largemb', '<=tablet'){
+                        width: unset;
+            font-size: 16px;
+        }
+    }
+    .buyNow{
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 20%;
+        &:hover{
+            // background-color: var(--hover-color);
+            transition: all 0.3s ease-in-out;
+        }
+        @include media('>phone', '<=mobile'){
+            width: unset;
+            font-size: 16px;
+        }
+        @include media('>smphone', '<=phone'){
+            width: unset;
+            font-size: 14px;
+        }
+        @include media('>mobile', '<=largemb'){
+            width: unset;
+            font-size: 16px;
+        }
+        @include media('>largemb', '<=tablet'){
+            width: unset;
+            font-size: 16px;
+        }
+    }
+}

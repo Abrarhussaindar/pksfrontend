@@ -1,0 +1,51 @@
+@import "../../../breakpoints.scss";
+
+.productAbout{
+    margin-top: 15px;
+
+    .heading{
+        h4{
+
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            @include media('>phone', '<=mobile'){
+                font-size: 16px;
+
+            }
+            @include media('>smphone', '<=phone'){
+        
+            }
+            @include media('>mobile', '<=largemb'){
+        
+            }
+            @include media('>largemb', '<=tablet'){
+        
+            }
+        }
+    }
+    .description{
+        ul{
+            margin-left: 20px;
+            li{
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 5px;
+                color: rgb(106, 101, 101);
+                @include media('>phone', '<=mobile'){
+                    font-size: 12px;
+
+                }
+                @include media('>smphone', '<=phone'){
+            
+                }
+                @include media('>mobile', '<=largemb'){
+            
+                }
+                @include media('>largemb', '<=tablet'){
+            
+                }
+            }
+        }
+    }
+}

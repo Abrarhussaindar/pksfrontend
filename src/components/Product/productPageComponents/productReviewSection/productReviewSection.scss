@@ -1,0 +1,147 @@
+@import "../../../breakpoints.scss";
+
+.productReviewsSection{
+    .top{
+        margin: 10px 0;
+        .heading{
+            h3{
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+
+    }
+    .bottom{
+        display: flex;
+
+        @include media('>phone', '<=mobile'){
+            flex-direction: column;
+
+        }
+        @include media('>smphone', '<=phone'){
+            flex-direction: column;
+        }
+        @include media('>mobile', '<=largemb'){
+            flex-direction: column;
+        }
+        @include media('>largemb', '<=tablet'){
+            flex-direction: column;
+        }
+        .left{
+            flex: 3;
+            .revHr{
+                margin: 10px 30px 10px 0;
+            }
+            .customerReviwes{
+                .heading{
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+                
+                
+                
+
+
+            }
+
+            .byFeature{
+                .heading{
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+
+                .container{
+                    padding: 10px 0;
+                    
+                }
+            }
+            .reviewThisProduct{
+                .heading{
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+                
+            }
+        }
+        .right{
+            flex: 9;
+            .hrBtm{
+                margin: 20px 0;
+            }
+            .rigthTop,.rightCenter,.rightBottom{
+                .heading{
+                    h4{
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            .rigHr{
+                margin: 15px 0;
+            }
+            // .rigthTop{
+                
+            // }
+            .rightCenter{
+                .container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    // border: 1px solid black;
+                    width: 45%;
+                    margin: 10px 0;
+
+                    @include media('>phone', '<=mobile'){
+                        flex-wrap: wrap;
+                        width: unset;
+            
+                    }
+                    @include media('>smphone', '<=phone'){
+                                                flex-wrap: wrap;
+                        width: unset;
+                    }
+                    @include media('>mobile', '<=largemb'){
+                                                flex-wrap: wrap;
+                        width: unset;
+                    }
+                    @include media('>largemb', '<=tablet'){
+                                                flex-wrap: wrap;
+                        width: unset;
+                    }
+                    
+                }
+            }
+            .rightBottom{
+                display: flex;
+                flex-direction: column;
+
+                .container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    @include media('>phone', '<=mobile'){
+                        flex-direction: column;
+            
+                    }
+                    @include media('>smphone', '<=phone'){
+                        flex-direction: column;
+                    }
+                    @include media('>mobile', '<=largemb'){
+                        flex-direction: column;
+                    }
+                    @include media('>largemb', '<=tablet'){
+                        flex-direction: column;
+                    }
+                }
+
+            }
+        }
+    }
+}

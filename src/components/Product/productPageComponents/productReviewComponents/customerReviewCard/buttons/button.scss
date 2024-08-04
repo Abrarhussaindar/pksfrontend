@@ -1,0 +1,71 @@
+@import "../../../../../breakpoints.scss";
+
+
+.btns{
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    .helpBtn{
+        background-color: var(--un-color);
+        color: black;
+        outline: none;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        // width: 92%;
+        &:hover{
+            background-color: var(--hover-color);
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        @include media('>phone', '<=mobile'){
+            font-size: 14px;
+            padding: 5px 15px;
+
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
+    }
+
+    .repBtn{
+        background-color: white;
+        color: black;
+        outline: none;
+        border: 1px solid var(--un-color);
+        padding: 10px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+        // width: 92%;
+        &:hover{
+            background-color: var(--hover-color);
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        @include media('>phone', '<=mobile'){
+            font-size: 14px;
+            padding: 5px 15px;
+
+        }
+        @include media('>smphone', '<=phone'){
+
+        }
+        @include media('>phone', '<=largemb'){
+
+        }
+        @include media('>largemb', '<=tablet'){
+
+        }
+    }
+}

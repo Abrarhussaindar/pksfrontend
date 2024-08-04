@@ -1,0 +1,23 @@
+.stockContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--main-color);
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+
+        span{
+            font-weight: 600;
+            color: var(--main-color);
+        }
+        .quantityCount{
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}

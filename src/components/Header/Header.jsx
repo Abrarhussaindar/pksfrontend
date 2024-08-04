@@ -41,8 +41,10 @@ export const Header = () => {
 
             <div className='headerRightSide'>
                 <div className='cart'>
-                    <img src={cart} alt='cart' />
-                    <span className='cartCount'>0</span>
+                    <Link to="/cart">
+                        <img src={cart} alt='cart' />
+                        <span className='cartCount'>0</span>
+                    </Link>
                 </div>
                 <img src={userPlaceHolder} alt='user' onClick={() => setIsOpen(!isOpen)} />
             </div>

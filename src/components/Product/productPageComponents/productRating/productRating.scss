@@ -1,0 +1,58 @@
+@import "../../../breakpoints.scss";
+
+.productRating{
+    list-style: none;
+    padding: 10px;
+    li{
+        display: flex;
+        align-items: center;
+        .starFill{
+            width: 18px;
+            @include media('>phone', '<=mobile'){
+                width: 16px;
+            }
+            @include media('>smphone', '<=phone'){
+                width: 16px;
+            }
+            @include media('>mobile', '<=largemb'){
+                width: 16px;
+            }
+            @include media('>largemb', '<=tablet'){
+                width: 16px;
+            }
+        }
+        img{
+            width: 16px;
+            @include media('>phone', '<=mobile'){
+                width: 14px;
+            }
+            @include media('>smphone', '<=phone'){
+                width: 14px;
+            }
+            @include media('>mobile', '<=largemb'){
+                width: 14px;
+            }
+            @include media('>largemb', '<=tablet'){
+                width: 14px;
+            }
+        }
+
+        span{
+            margin-left: 5px;
+            color: var(--hover-color);
+
+            @include media('>phone', '<=mobile'){
+                font-size: 14px;
+            }
+            @include media('>smphone', '<=phone'){
+                font-size: 14px;
+            }
+            @include media('>mobile', '<=largemb'){
+                font-size: 14px;
+            }
+            @include media('>largemb', '<=tablet'){
+                font-size: 14px;
+            }
+        }
+    }
+}

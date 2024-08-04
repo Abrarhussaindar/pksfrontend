@@ -1,0 +1,47 @@
+@import "../../../breakpoints.scss";
+
+.priceContainer{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    @include media('>phone', '<=mobile'){
+        margin: 10px 0;
+    }
+    @include media('>smphone', '<=phone'){
+        margin: 10px 0;
+    }
+    @include media('>mobile', '<=largemb'){
+        margin: 10px 0;
+    }
+    @include media('>largemb', '<=tablet'){
+        margin: 10px 0;
+    }
+    .prices{
+        margin-left: 20px;
+        font-size: 28px;
+        font-weight: 500;
+        // padding-top: 20px;
+        // position: absolute;
+        position: relative;
+        span{
+            position: absolute;
+            font-size: 14px;
+            left: -15%;
+        }
+    }
+    p{
+        font-size: 14px;
+        color: var(--hover-color);
+        
+        span{
+            
+            text-decoration: line-through;
+        }
+    }
+    .discounts{
+        font-size: 18px;
+        font-weight: 600;
+        color: red;
+    }
+
+}

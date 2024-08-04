@@ -1,0 +1,37 @@
+@import "../../../../breakpoints.scss";
+
+.imgContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 10px 0;
+    gap: 10px;
+    img{
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    @include media('>phone', '<=mobile'){
+        width: unset;
+        overflow: scroll;
+        gap: 5px;
+        img{
+            width: 80px;
+        }
+
+    }
+    @include media('>smphone', '<=phone'){
+
+    }
+    @include media('>mobile', '<=largemb'){
+        width: unset;
+        overflow: scroll;
+        gap: 5px;
+        img{
+            width: 80px;
+        }
+    }
+    @include media('>largemb', '<=tablet'){
+
+    }
+}
